@@ -18,28 +18,12 @@ import altair as alt
 
 def main():
     st.title("Data Visualization")
+    st.image("5120.jpeg")
     df = pd.read_csv("StudentsPerformance.csv")
     
 
     st.dataframe(df.head())
 
-    #df['species'].value_counts().plot(kind="bar")
-    #st.pyplot()
-
-    #Bar chart
-    #using St.bar_chart
-
-    #st.bar_chart(df[['sepal_length','petal_length']])
-
-    #lang_list = df2.columns.tolist()
-
-    #lang_choices = st.multiselect("Choose Language", lang_list, default="Python")
-    #new_df = df2[lang_choices]
-    #st.line_chart(new_df)
-
-    #Area chart
-
-    # st.area_chart(new_df)
 
 
     fig = px.pie(df,'gender', title="Pie chart of gender")
@@ -81,15 +65,6 @@ def main():
 
 
 
-    #fig = plt.figure()
-    #df['species'].value_counts().plot(kind="bar")
-    #st.pyplot(fig)
-
-    #method 2
-    #fig,ax = plt.subplots()
-    #df['species'].value_counts().plot(kind="bar")
-    #st.pyplot(fig)
-    
     
 
 
