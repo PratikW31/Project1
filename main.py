@@ -18,7 +18,10 @@ import altair as alt
 
 def main():
     st.title("Data Visualization")
+    st.markdown("""___""")
     st.image("5120.jpeg")
+    st.markdown("""___""")
+    st.header("Dataset")
     df = pd.read_csv("StudentsPerformance.csv")
     
 
