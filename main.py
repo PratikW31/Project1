@@ -17,7 +17,7 @@ import altair as alt
 
 
 def main():
-    st.title("Data Visualization")
+    st.title("Data Visualization On Education")
     st.markdown("""___""")
     st.image("5120.jpeg")
     st.markdown("""___""")
