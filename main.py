@@ -18,7 +18,7 @@ import altair as alt
 
 def main():
     st.title("Data Visualization")
-    df = pd.read_csv("data/StudentsPerformance.csv")
+    df = pd.read_csv("StudentsPerformance.csv")
     
 
     st.dataframe(df.head())
